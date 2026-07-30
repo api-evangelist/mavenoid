@@ -1,8 +1,27 @@
 aid: mavenoid
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mavenoid.png
 name: Mavenoid
-description: 'Mavenoid is a company surfaced as a portfolio company of creandum, point-nine and added
-  to the API Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Mavenoid is an AI agent platform for product support, helping hardware
+  and consumer-electronics companies deflect and resolve customer issues through self-service
+  troubleshooting across voice, text, image, and video. Its products include Voice
+  Assist (AI call routing and self-service), a Dynamic Help Center that surfaces AI-powered
+  support in search results, an embeddable Virtual Assistant, and an Insights analytics
+  dashboard. Mavenoid connects to CRM, ticketing, ERP, e-commerce, and IoT systems.
+  The company is backed by Creandum and Point Nine. As of this enrichment pass Mavenoid
+  publishes no public developer API, OpenAPI/AsyncAPI specification, SDK, or well-known
+  discovery surface; integrations are configured within its product rather than via
+  a documented public REST API.'
 url: https://raw.githubusercontent.com/api-evangelist/mavenoid/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Saas
+- Customer Support
+- AI Agents
+- Self-Service
+- Troubleshooting
+- Product Support
+- Help Center
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +49,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mavenoid-domain-security.yml
 - type: Website
   url: https://www.mavenoid.com/
+- type: Blog
+  url: https://www.mavenoid.com/en/blog
+- type: Support
+  url: https://help.mavenoid.com/
+- type: Login
+  url: https://app.mavenoid.com/login/
+- type: SignUp
+  url: https://www.mavenoid.com/en/request-demo
+- type: TermsOfService
+  url: https://www.mavenoid.com/en/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.mavenoid.com/en/privacy/privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
